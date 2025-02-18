@@ -9,7 +9,7 @@ This repository contains exercise codes for the Numerical Calculus discipline ca
 - **Optimization**: Apply optimization techniques to reduce numerical errors and improve computational stability.
 - **Data processing**: Understand and implement numerical methods for efficient data storage, interpolation, and fitting.
 
-## Languages
+## Technologies
 <div style="display: inline_block"><cbr>
   <img align = "top" alt = "gabrielbribeiroo_C++" height = "50" width = "50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" /> 
   <img align = "top" alt = "gabrielbribeiroo_Python" height = "50" width = "50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" /> 
