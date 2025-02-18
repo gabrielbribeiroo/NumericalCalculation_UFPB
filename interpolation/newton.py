@@ -1,3 +1,26 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+def plot_newton_interpolation(x, y, matrix):
+    # Generate a range of x values for plotting the interpolation
+    x_plot = np.linspace(min(x), max(x), 500)
+    y_plot = [newton_interpolation(len(x), x, xi, matrix) for xi in x_plot]
+
+    # Plot the original data points
+    plt.scatter(x, y, color='red', label='Data Points')
+
+    # Plot the Newton interpolation polynomial
+    plt.plot(x_plot, y_plot, label='Newton Interpolation Polynomial')
+
+    # Add title and labels
+    plt.title('Newton Interpolation Polynomial')
+    plt.xlabel('x')
+    plt.ylabel('y')
+    plt.legend()
+    plt.grid(True)
+    plt.show()
+    
+
 def divided_differences(n, x, y):
     matrix = [[0 for _ in range(n)] for _ in range(n)]
 
@@ -39,6 +62,8 @@ def main():
     matrix = divided_differences(n, x, y)
     result = newton_interpolation(n, x, x_value, matrix)
     print(f"The interpolated value for x = {x_value} : {result}")
+
+    plot_newton_interpolation(x, y, matrix)
 
 if __name__ == "__main__":
     main()

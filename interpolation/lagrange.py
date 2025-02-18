@@ -18,7 +18,7 @@ def plot_interpolation(x, y, value_x, result):
     plt.grid(True)  # Show grid
     plt.show()  # Display the plot
 
-# Função para calcular o polinômio de Lagrange
+# Function to calculate the Lagrange polynomial
 def interpolation_lagrange(n, x, y, value_x):
     result = 0.0  # Initialize the result as 0.0
 
