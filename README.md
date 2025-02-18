@@ -17,7 +17,7 @@ This repository contains exercise codes for the Numerical Calculus discipline ca
 </div>
 
 ## Tools
-- **IDEs (Integrated Development Environments)**: Some environments such as Visual Studio Code (VS Code) were used to facilitate visualization.
+- **IDEs (Integrated Development Environments)**: Some environments such as Visual Studio Code (VS Code) and Google Colaboratory (Google Colab) were used to facilitate visualization.
 - **Command prompt**: Using the terminal to compile codes.
 
 <div style="display: inline_block"><cbr>
