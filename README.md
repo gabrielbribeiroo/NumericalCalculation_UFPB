@@ -14,6 +14,8 @@ This repository contains exercise codes for the Numerical Calculus discipline ca
   <img align = "top" alt = "gabrielbribeiroo_C++" height = "50" width = "50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" /> 
   <img align = "top" alt = "gabrielbribeiroo_Python" height = "50" width = "50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" /> 
   <img align = "top" alt = "gabrielbribeiroo_JupyterNotebook" height = "50" width = "50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" />
+  <img align = "top" alt = "gabrielbribeiroo_Pandas" height = "50" width = "50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" /> 
+  <img align = "top" alt = "gabrielbribeiroo_Matplotlib" height = "50" width = "50" src="https://upload.wikimedia.org/wikipedia/commons/8/84/Matplotlib_icon.svg" />
 </div>
 
 ## Tools
