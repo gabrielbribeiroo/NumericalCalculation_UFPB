@@ -1,15 +1,13 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Function to plot the data points and the least squares line or curve
-def plot_mmq(x, y, y_plot, title):
+def plot_mmq(x, y, x_plot, y_plot, title):
     # Plot the original data points
     plt.scatter(x, y, color='red', label='Data Points')
 
     # Plot the least squares line or curve
-    plt.plot(x, y_plot, label=title)
+    plt.plot(x_plot, y_plot, label=title)
 
-    # Add title and labels
     plt.title(title)
     plt.xlabel('x')
     plt.ylabel('y')
@@ -70,20 +68,21 @@ def main():
     # Perform the fitting based on the user's choice
     if choice == 1:
         a, b = mmq_linear(x, y)
-        y_plot = a + b * np.linspace(min(x), max(x), 500)
-        plot_mmq(x, y, y_plot, 'Least Squares Line (Linear)')
+        x_plot = np.linspace(min(x), max(x), 500)
+        y_plot = a + b * x_plot
+        plot_mmq(x, y, x_plot, y_plot, 'Least Squares Line (Linear)')
         print(f"The coefficients are: a = {a}, b = {b}")
     elif choice == 2:
         a, b, c = mmq_quadratic(x, y)
         x_plot = np.linspace(min(x), max(x), 500)
         y_plot = a * x_plot**2 + b * x_plot + c
-        plot_mmq(x, y, y_plot, 'Least Squares Curve (Quadratic)')
+        plot_mmq(x, y, x_plot, y_plot, 'Least Squares Curve (Quadratic)')
         print(f"The coefficients are: a = {a}, b = {b}, c = {c}")
     elif choice == 3:
         a, b = mmq_exponential(x, y)
         x_plot = np.linspace(min(x), max(x), 500)
         y_plot = a * np.exp(b * x_plot)
-        plot_mmq(x, y, y_plot, 'Least Squares Curve (Exponential)')
+        plot_mmq(x, y, x_plot, y_plot, 'Least Squares Curve (Exponential)')
         print(f"The coefficients are: a = {a}, b = {b}")
     else:
         print("Invalid choice")
