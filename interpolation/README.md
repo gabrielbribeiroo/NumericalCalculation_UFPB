@@ -21,8 +21,8 @@ Each interpolation method is implemented in a separate file within this director
 ## Google Colab and Slides
 
 You can find the Google Colab notebook and the project slides at the following links:
-- [Google Colab Notebook](#https://colab.research.google.com/drive/1I65Qa26y-hYd8j3Ws_AOvMtXXrduCtD1?usp=sharing)
-- [Project Slides](#https://www.canva.com/design/DAGfaZmZv6Y/KKu9mUMibHx_4HicDF9Y7w/edit)
+- [Google Colab Notebook](https://colab.research.google.com/drive/1I65Qa26y-hYd8j3Ws_AOvMtXXrduCtD1?usp=sharing)
+- [Project Slides](https://www.canva.com/design/DAGfaZmZv6Y/KKu9mUMibHx_4HicDF9Y7w/edit)
 
 ## Contribution
 
