@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains various interpolation methods that are essential for the Optimus Route AI project. The goal of this project is to determine the best route for your routine, optimizing travel time and efficiency.
+This repository contains various interpolation methods essential for the Optimus Route AI project. The goal of this project is to determine the best route for your routine, optimizing travel time and efficiency.
 
 ## Purpose of Interpolation Methods
 
@@ -26,7 +26,7 @@ You can find the Google Colab notebook and the project slides at the following l
 
 ## Contribution
 
-Contributions to improve the interpolation methods or add new ones are welcome. Please follow the standard guidelines for contributing to this repository.
+I want you to know that contributions to improve the interpolation methods or add new ones are welcome. Please follow the standard guidelines for contributing to this repository.
 
 ## License
 
