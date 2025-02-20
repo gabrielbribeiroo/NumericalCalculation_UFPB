@@ -7,7 +7,7 @@ def plot_interpolation(x, y, value_x, result):
     plt.plot(value_x, result, 'bo', label=f'Interpolated Point ({value_x}, {result:.6f})')  # Plot the interpolated point
 
     # Generate a range of x values for plotting the interpolation polynomial
-    x_range = np.linspace(min(x), max(x), 500)
+    x_range = np.linspace(min(x) - 1, max(x) + 1, 1000)  # Increased resolution and added padding
     y_range = [interpolation_lagrange(len(x), x, y, xi) for xi in x_range]
 
     plt.plot(x_range, y_range, label='Lagrange Polynomial')  # Plot the interpolation polynomial
@@ -16,6 +16,13 @@ def plot_interpolation(x, y, value_x, result):
     plt.legend()  # Show legend
     plt.title('Lagrange Interpolation')  # Title of the plot
     plt.grid(True)  # Show grid
+    
+    # Adjust the axis limits for better visualization
+    x_margin = (max(x) - min(x)) * 0.1  # 10% margin
+    y_margin = (max(y) - min(y)) * 0.1  # 10% margin
+    plt.xlim(min(x) - x_margin, max(x) + x_margin)
+    plt.ylim(min(y) - y_margin, max(y) + y_margin)
+    
     plt.show()  # Display the plot
 
 # Function to calculate the Lagrange polynomial
