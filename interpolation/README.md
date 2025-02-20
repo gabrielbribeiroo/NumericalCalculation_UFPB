@@ -27,7 +27,7 @@ You can find the Google Colab notebook and the project slides at the following l
 
 ## Contribution
 
-I want you to know that contributions to improve the interpolation methods or add new ones are welcome. Please follow the standard guidelines for contributing to this repository.
+You should know that contributions to improve the interpolation methods or add new ones are welcome. Please follow the standard guidelines for contributing to this repository.
 
 ## License
 
@@ -35,4 +35,4 @@ This project is licensed under the MIT License. See the LICENSE file for more de
 
 ## Contact
 
-For any questions or issues, please contact the project maintainer.
+For any questions or issues, don't hesitate to get in touch with the project maintainer.
