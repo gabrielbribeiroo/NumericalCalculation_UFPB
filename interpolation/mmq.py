@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+# Function to plot the data points and the fitted curve/line
 def plot_mmq(x, y, x_plot, y_plot, title):
     # Plot the original data points
     plt.scatter(x, y, color='red', label='Data Points')
@@ -8,6 +9,7 @@ def plot_mmq(x, y, x_plot, y_plot, title):
     # Plot the least squares line or curve
     plt.plot(x_plot, y_plot, label=title)
 
+    # Set plot title and labels
     plt.title(title)
     plt.xlabel('x')
     plt.ylabel('y')
@@ -17,13 +19,16 @@ def plot_mmq(x, y, x_plot, y_plot, title):
 
 # Function to perform linear least squares fitting
 def mmq_linear(x, y):
-    n = len(x)
-    sum_x = np.sum(x)
-    sum_y = np.sum(y)
-    sum_xx = np.sum(x * x)
-    sum_xy = np.sum(x * y)
+    n = len(x)  # Number of data points
+    sum_x = np.sum(x)  # Sum of x values
+    sum_y = np.sum(y)  # Sum of y values
+    sum_xx = np.sum(x * x)  # Sum of x squared values
+    sum_xy = np.sum(x * y)  # Sum of x*y values
     
+    # Calculate the denominator for the coefficients
     denominator = n * sum_xx - sum_x ** 2
+    
+    # Calculate the coefficients a and b
     a = (sum_y * sum_xx - sum_x * sum_xy) / denominator
     b = (n * sum_xy - sum_x * sum_y) / denominator
     
@@ -31,15 +36,25 @@ def mmq_linear(x, y):
 
 # Function to perform quadratic least squares fitting
 def mmq_quadratic(x, y):
+    # Create the design matrix for quadratic fitting
     A = np.vstack([x**2, x, np.ones(len(x))]).T
+    
+    # Solve the least squares problem
     a, b, c = np.linalg.lstsq(A, y, rcond=None)[0]
+    
     return a, b, c
 
 # Function to perform exponential least squares fitting
 def mmq_exponential(x, y):
+    # Take the natural logarithm of y values
     y_log = np.log(y)
+    
+    # Perform linear least squares fitting on the log-transformed data
     b, log_a = mmq_linear(x, y_log)
+    
+    # Convert log(a) back to a
     a = np.exp(log_a)
+    
     return a, b
 
 # Main function to execute the program
