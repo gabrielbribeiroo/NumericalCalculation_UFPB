@@ -22,11 +22,11 @@ def plot_newton_interpolation(x, y, matrix, x_value, interpolated_y):
     plt.legend()
     plt.grid(True)
 
-    # Adjust the axis limits for better visualization
-    x_margin = (max(x) - min(x)) * 0.1  # 10% margin
-    y_margin = (max(y) - min(y)) * 0.1  # 10% margin
-    plt.xlim(min(x) - x_margin, max(x) + x_margin)
-    plt.ylim(min(y) - y_margin, max(y) + y_margin)
+    # Adjust the axis limits for better visualization 
+    x_margin = (max(x + [x_value]) - min(x + [x_value])) * 0.1  
+    y_margin = (max(y + [interpolated_y]) - min(y + [interpolated_y])) * 0.1 
+    plt.xlim(min(x + [x_value]) - x_margin, max(x + [x_value]) + x_margin)
+    plt.ylim(min(y + [interpolated_y]) - y_margin, max(y + [interpolated_y]) + y_margin)
 
     plt.show()
     
