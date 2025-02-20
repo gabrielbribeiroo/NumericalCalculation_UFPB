@@ -13,6 +13,7 @@ Interpolation is a method of constructing new data points within the range of a 
 1. **Polynomial Interpolation**: This method uses polynomials to estimate values between known data points. It is more flexible than linear interpolation but can be more complex.
 2. **Lagrange Interpolation**: This method uses the Lagrange polynomial to estimate values. It is useful for small datasets and provides an exact fit through the known data points.
 3. **Newton Interpolation**: This method uses Newton's divided differences to estimate values. It is useful for both small and large datasets and provides a polynomial that fits through the known data points.
+4. **Least Squares Method**: This method minimizes the sum of the squares of the differences between the observed and estimated values. It is useful for fitting a model to data with noise or errors.
 
 ## How to Use
 
