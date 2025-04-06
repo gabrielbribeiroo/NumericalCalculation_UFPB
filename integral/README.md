@@ -33,7 +33,7 @@ Evaluate which numerical integration method provides the best approximation of t
 
 ## 📈 Example Results
 
-| Method         | Distance (m) | Execution Time (s) | Relative Error (%) |
+| Method         | Distance (m) | Execution Time (s)  | Relative Error (%)  |
 |----------------|--------------|---------------------|---------------------|
 | Trapezoidal    | 11,581.23    | 0.000173            | 0.1976              |
 | Simpson 1/3    | 11,662.63    | 0.000195            | 0.5040              |
@@ -46,4 +46,5 @@ Evaluate which numerical integration method provides the best approximation of t
 The trapezoidal method was the most accurate in this context due to the non-smooth, irregular nature of the speed data. Its linear approximation avoids overfitting, which can occur with higher-order methods like Simpson’s.
 
 ## 📬 Contact
+
 If you have any questions, issues, or suggestions, feel free to open an issue or reach out!
