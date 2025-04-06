@@ -45,20 +45,5 @@ Evaluate which numerical integration method provides the best approximation of t
 
 The trapezoidal method was the most accurate in this context due to the non-smooth, irregular nature of the speed data. Its linear approximation avoids overfitting, which can occur with higher-order methods like Simpson’s.
 
-## 🚀 How to Run
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/player-distance-simulation.git
-   cd player-distance-simulation
-
-2. Install dependencies:
-    ```bash
-    pip install numpy matplotlib pandas
-
-3. Run the simulation:
-    python player_distance_simulation.py
-
-
 ## 📬 Contact
 If you have any questions, issues, or suggestions, feel free to open an issue or reach out!
